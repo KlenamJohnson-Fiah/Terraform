@@ -1,0 +1,7 @@
+---
+- name: To ping my Bastion server
+  hosts: bastion_jump
+  tasks:
+
+    - name: test to see if the ansible server was properly provisioned
+      action: ping
